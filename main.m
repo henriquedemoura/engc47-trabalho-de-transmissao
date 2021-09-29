@@ -20,10 +20,99 @@ display("Valores de C")
 display(LDATA.C)
 
 %% Modelo RLC de linha de transmissão com cabos para-raio, f=60Hz, R_solo = 1000  ohm . m
+
+[LDATA] = linha_do_trabalho(60, 1000, true);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
+
 %% Modelo RLC de linha de transmissão com cabos para-raio, f=1kHz, R_solo = 0  ohm . m
+
+[LDATA] = linha_do_trabalho(1000, 0, true);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
+
 %% Modelo RLC de linha de transmissão com cabos para-raio, f=1kHz, R_solo = 1000  ohm . m
 
+[LDATA] = linha_do_trabalho(1000, 1000, true);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
+
 %% Modelo RLC de linha de transmissão sem cabos para-raio, f=60Hz, R_solo = 0 ohm . m
+
+[LDATA] = linha_do_trabalho(60, 0, false);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
+
 %% Modelo RLC de linha de transmissão sem cabos para-raio, f=60Hz, R_solo = 1000  ohm . m
+
+[LDATA] = linha_do_trabalho(60, 1000, false);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
+
 %% Modelo RLC de linha de transmissão sem cabos para-raio, f=1kHz, R_solo = 0  ohm . m
+
+[LDATA] = linha_do_trabalho(1000, 0, false);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
+
 %% Modelo RLC de linha de transmissão sem cabos para-raio, f=1kHz, R_solo = 1000 ohm . m
+
+[LDATA] = linha_do_trabalho(1000, 1000, false);
+
+display("Valores de R")
+display(LDATA.R)
+
+display("Valores de L")
+display(LDATA.L)
+
+display("Valores de C")
+display(LDATA.C)
+
